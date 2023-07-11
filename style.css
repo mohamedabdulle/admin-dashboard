@@ -1,8 +1,8 @@
 :root {
   --system-ui: 'Open Sans',system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",sans-serif;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  --default-spacing: 2rem;
-  --half-spacing: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  --sizing: 2rem;
+  --half-sizing: 1rem;
   --secondary-color: rgb(237, 28, 36);
   --text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
   --default-text-color: white;
@@ -12,34 +12,133 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 body {
   font-family: var(--system-ui);
-  font-size: 1.6rem;
   line-height: 1.5;
+  display: grid;
+  grid-template: auto 5fr 30px / 1fr 5fr;
+  font-weight: bold;
 }
 
-svg,
+svg {
+  width: 1.25rem;
+}
+
 img {
   max-width: 100%;
-  width: 20px;
 }
 
 li {
   list-style-type: none;
 }
+
+button {
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  width: 6.5em;
+  height: 2em;
+  font-weight: bold;
+}
+
 .grid {
   display: grid;
 }
 
-input[type="search"] {
-  box-shadow: inset 1px 1px 3px #ccc;
-  border-radius: 5px;
+.large-size {
+  width: 4rem;
+  min-width: 4rem;
 }
 
+.large-font {
+  font-size: var(--sizing);
+}
+
+.med-size {
+  width: 2.25rem;
+}
+
+.header-container {
+  background-color: lightpink;
+  grid-template: auto auto / 2fr 1fr;
+  padding: var(--half-sizing) var(--sizing);
+  row-gap: var(--half-sizing);
+  column-gap: var(--sizing);
+}
+
+.nav-container {
+  grid-area: 1 / 1 / -1 / 1;
+  background-color: lightblue;
+}
+
+.header-2-column {
+  grid-template-columns: auto 1fr;
+  gap: var(--half-sizing);
+  align-items: center;
+}
+
+.header-column-flow {
+  grid-auto-flow: column;
+  align-items: center;
+  gap: var(--half-sizing);
+  justify-content: end;
+}
+
+.column-center-stretch {
+  justify-content: stretch;
+  align-content: center;
+  height: 100%;
+  justify-items: end;
+}
+
+.wrap-flex-text {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--half-sizing);
+}
+
+.wrap-flex-text > span {
+  flex: 0 1 auto;
+}
+
+input[type="search"] {
+  border-radius: 20px;
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  max-width: 40vw;
+}
+
+nav.nav-container {
+  padding: var(--half-sizing) var(--sizing);
+}
+
+.nav-2-column {
+ grid-template-columns: auto auto;
+ justify-content: start;
+ gap: var(--half-sizing);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
-  bottom: 10px;
   font-weight: bold;
   font-size: 1rem;
   text-shadow: var(--text-shadow);
