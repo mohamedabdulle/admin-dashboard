@@ -8,7 +8,7 @@ This is a sample admin dashboard for construction project managers.
 
 ### Mobile View:
 
-![Admin Dashboard Mobile](docs/admin-dashboard-mobile.png)
+![Admin Dashboard Mobile](docs/admin-dashboard-mobile.png)![Admin Dashboard Mobile](docs/admin-dashboard-mobile2.png)
 
 ## Links
 - [Click here to see the admin dashboard live.](https://mohamedabdulle.github.io/admin-dashboard/)

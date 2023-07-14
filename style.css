@@ -21,7 +21,7 @@
 body {
   font-family: var(--system-ui);
   line-height: 1.5;
-  grid-template: auto 5fr 50px / 0.5fr 6fr;
+  grid-template: auto 5fr 40px / 0.5fr 6fr;
   font-weight: bold;
   color: var(--default-text-color);
 }
@@ -249,12 +249,15 @@ footer,
 .footer {
   font-size: 1rem;
   text-shadow: var(--text-shadow);
-  justify-content: center;
-  align-content: center;
+  align-items: start;
   color: var(--default-text-color);
   text-decoration: none;
-  width: calc(100% - ((100% * var(--general-transform-scale)) - 100%));
+  width: auto;
   height: 100%;
+}
+
+.contacts-aside {
+  justify-self: center;
 }
 
 .contacts {
@@ -280,9 +283,14 @@ button:hover {
   transform: scale(1.10);
 }
 
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 860px) {
   .nav-container > menu span,
   .nav-container > header h1 {
     display: none;
+  }
+
+  .main-container {
+    grid-template-columns: none;
+    gap: var(--large-sizing);
   }
 }
