@@ -258,9 +258,10 @@ footer,
 }
 
 .contacts {
-  grid-template-columns: auto 1fr;
-  justify-items: start;
+  grid-template-columns: auto auto;
+  justify-items: center;
   align-items: center;
+  justify-content: center;
 }
 
 .columns-2:hover,
