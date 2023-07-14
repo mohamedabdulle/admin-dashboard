@@ -259,7 +259,7 @@ footer,
 
 .contacts {
   grid-template-columns: auto auto;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   justify-content: center;
 }
