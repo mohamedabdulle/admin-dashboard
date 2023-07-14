@@ -2,10 +2,13 @@
 
 This is a sample admin dashboard for construction project managers.
 
+### Full View:
+
 ![Admin Dashboard](docs/admin-dashboard.png) 
 
-Mobile View:
-![Admin Dashboard Mobile View](docs/admin-dashboard-mobileview.png)
+### Mobile View:
+
+![Admin Dashboard Mobile](docs/admin-dashboard-mobile.png)
 
 ## Links
 - [Click here to see the admin dashboard live.](https://mohamedabdulle.github.io/admin-dashboard/)
@@ -15,4 +18,4 @@ Mobile View:
 
 ## Description
 
-The purpose of this project is to practice creating an admin dashboard with a responsive grid layout and with as little use of flexbox.
+The purpose of this project is to create an admin dashboard with a responsive grid layout and with as little use of flexbox.
