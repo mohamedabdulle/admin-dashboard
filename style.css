@@ -94,7 +94,8 @@ footer,
 .aligntment,
 .grid,
 .auto-section>section,
-.auto-section section div {
+.auto-section section div,
+.alignment {
   display: grid;
 }
 
@@ -228,7 +229,6 @@ footer,
 .contact-img {
   border-radius: 50%;
   width: 7rem;
-  min-width: 3rem;
 }
 
 .aside-card {
@@ -277,4 +277,11 @@ button:hover {
 .header-container svg:hover {
   transition: transform 0.3s;
   transform: scale(1.10);
+}
+
+@media only screen and (max-width: 755px) {
+  .nav-container > menu span,
+  .nav-container > header h1 {
+    display: none;
+  }
 }
