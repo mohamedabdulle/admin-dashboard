@@ -23,4 +23,4 @@ Start of Page             |  End of Page
 
 ## Description
 
-The purpose of this project is to create an admin dashboard with a responsive grid layout and with as little use of flexbox (For learning purposes).
+The purpose of this project is to create an admin dashboard with a responsive grid layout and with as little use of flexbox (for learning purposes).
